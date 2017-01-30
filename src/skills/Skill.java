@@ -133,6 +133,5 @@ public class Skill {
     public Image getSkillImage() {
         return skillImage;
     }
-
-
+    
 }
