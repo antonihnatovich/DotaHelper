@@ -1,7 +1,7 @@
 package skills;
 
+import com.sun.istack.internal.NotNull;
 import javafx.scene.image.Image;
-import java.math.*;
 
 public class Skill {
     private String skillName = "", skillInfo = "", skillType = "";
@@ -70,6 +70,42 @@ public class Skill {
         this.skillImage = skillImage;
     }
 
+    public void setSkillName(@NotNull String skillName) {
+        if (!skillName.equals(""))
+            this.skillName = skillName;
+    }
+
+    public void setSkillInfo(@NotNull String skillInfo) {
+        if (!skillInfo.equals(""))
+            this.skillInfo = skillInfo;
+    }
+
+    public void setSkillType(@NotNull String skillType) {
+        if (!skillType.equals(""))
+            this.skillType = skillType;
+    }
+
+    public void setSkillCooldownTime(@NotNull double skillCooldownTime) {
+        if (skillCooldownTime >= 0)
+            this.skillCooldownTime = skillCooldownTime;
+
+    }
+
+    public void setSkillRequiredMana(@NotNull double skillRequiredMana) {
+        if (skillRequiredMana >= 0)
+            this.skillRequiredMana = skillRequiredMana;
+    }
+
+    public void setSkillDamage(@NotNull double skillDamage) {
+        if (skillDamage >= 0)
+            this.skillDamage = skillDamage;
+    }
+
+    public void setSkillImage(Image skillImage) {
+        if (skillImage != null)
+            this.skillImage = skillImage;
+    }
+
     public String getSkillName() {
         return skillName;
     }
@@ -78,7 +114,7 @@ public class Skill {
         return skillInfo;
     }
 
-    public String getSkillType(){
+    public String getSkillType() {
         return skillType;
     }
 
@@ -97,4 +133,6 @@ public class Skill {
     public Image getSkillImage() {
         return skillImage;
     }
+
+
 }
