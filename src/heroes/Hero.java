@@ -1,6 +1,6 @@
 package heroes;
 
-public abstract class Hero {
+public class Hero {
     String heroName, heroFirstSkill, heroSecondSkill, heroThirdSkill, heroFourthSkill;
 
 
